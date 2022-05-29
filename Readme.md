@@ -16,15 +16,17 @@
 
 - 在 IDE 中安装 **Emmylua** 插件并打开目录(安装该插件是为了实现读取注解来实现提示,你也可以尝试别的插件,他们应该有类似的功能)
 - **将lua文件与库文件放在同级目录下** (注意:这很重要,因为模块依赖及Lua加载模块时的方式较为特殊,我目前认为它似乎不能很好的处理模块之间的相互依赖问题,这是权宜之计)
-- 在你的lua文件中使用 ***local iup = require("myIupLua.lua")*** 然后你就可以将 iup 作为一个表来看待, 通过 ***iup.functionName*** 来调用函数, 例如 ***iup.Message("Title","Contain")***
+- 在你的lua文件中使用 ***local iup = require("myIupLua.lua")*** 
+ 
+  然后你就可以将 iup 作为一个表来看待, 通过 ***iup.functionName*** 来调用函数, 例如 ***iup.Message("Title","Contain")***
 - 使用命令行 **cd 到该目录下**, 运行 ***lua [filename.lua]*** 或者 ***.\\lua54.exe [filename.lua]*** (推荐) ,来运行你的脚本
 
 ## 学习使用 IUP Lua
 
-请参阅以下英文官方教程来获取函数用法(不过我认为我的注解已经十分详细了,试着用一次就知道了)
+请参阅以下英文官方教程来获取函数用法(或许注解已经十分详细了,自行尝试)
 
-[IUP - Portable User Interface (puc-rio.br)](https://www.tecgraf.puc-rio.br/iup/) 在该网站的 **Guide/Lua Binding** 目录下
+[IUP - Portable User Interface (puc-rio.br)](https://www.tecgraf.puc-rio.br/iup/) 在网站的 **Guide/Lua Binding** 目录下
 
-## 更新日志
+## 重大更新日志
 
 - 2022/05/28 立项
